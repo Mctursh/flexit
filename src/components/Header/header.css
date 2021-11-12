@@ -1,0 +1,165 @@
+.App-header{
+    display: flex;
+}
+
+.search-parent{
+    display: grid;
+    grid-template-columns: 1fr 16fr 2fr;
+    width: 70%;
+    padding: 1em 2em;
+    background-color: #fff;
+    box-shadow: 0px 0.5px 4px #93919e;
+    border-radius: 5px;
+    /* height: 30px; */
+    align-items: center;
+}
+
+.search-parent input {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    height: 100%;
+    font-size: 1em;
+}
+
+.search-parent i{
+    font-size: 1.2em;
+}
+
+.search-parent button{
+    background-color: #31279B;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 0.7em;
+    border-radius: 5px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.utilities{
+    display: flex;
+    display: flex;
+    align-items: center;
+    grid-gap: 3em;
+    margin-left: 3em;
+}
+
+.utilities img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.notification{
+    position: relative;
+}
+
+.notification i{
+    font-size: 1.8em;
+}
+
+.name {
+    display: flex;
+    align-items: baseline;
+    grid-gap: 0.5em;
+}
+
+.name i{
+    font-size: .6em;
+}
+
+.name p{
+    cursor: pointer;
+   font-size: 1.2em;
+   font-weight: 600;
+}
+
+.notification i, .name p, .name i{
+    cursor: pointer;
+    color: #31279B;
+}
+
+#notify{
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    height: 16px;
+    color: #fff;
+    width: 16px;
+    text-align: center;
+    font-size: .7em;
+    font-weight: 800;
+    bottom: -5px;
+    right: -5px;
+}
+
+#photo{
+    cursor: pointer;
+    position: relative;
+}
+
+#photo span{
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    background-color: green;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    bottom: 1px;
+    right: 1px;
+}
+
+.notification-dropdown{
+    position: absolute;
+    width: 240px;
+}
+
+.notification-dropdown i{
+    cursor: pointer;
+    color: #fff;
+    /* position: relative;
+    top: 14px; */
+}
+
+.notification-item{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: center;
+    grid-gap: 0.8em;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 3px;
+    position: relative;
+    right: 60px;
+    top: 32px;
+    border: solid 2px #f2f2f4;
+    box-shadow: 0.3px 0.5px 0px #93919e;
+    z-index: 6;
+}
+
+.notification-dropdown::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    transform: rotateZ(45deg);
+    position: absolute;
+    top: 22px;
+    /* box-shadow: 0.5px 0.5px 4px #93919e; */
+    z-index: 7;
+    border-top: solid 2px #f2f2f4;
+    border-left: solid 2px #f2f2f4;
+}
+
+.notification-item i{
+    font-size: 1em;
+    color: #93919e;
+    cursor: pointer;
+}
+
+.notification-item img{
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}

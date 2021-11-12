@@ -6,4 +6,9 @@
 .App {
   display: grid;
   grid-template-columns: 1fr 5fr;
+  background-color: #FAFAFC;
+}
+
+.main {
+  padding: 3em 2em 2em;
 }
