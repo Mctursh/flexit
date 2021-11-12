@@ -3,10 +3,10 @@ import "./header.css"
 import Search from './Search';
 import Utility from './Utility';
 
-const Header = () => {
+const Header = ({ handleChange }) => {
     return (
         <header className="App-header"> 
-            <Search />
+            <Search handleChange={handleChange} />
             <Utility />        
         </header>
     )

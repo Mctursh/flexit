@@ -4,11 +4,12 @@
 }
 
 .App {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
+  display: flex;
   background-color: #FAFAFC;
 }
 
 .main {
-  padding: 2em
+  padding: 3em;
+  padding-left: 17em;
+  width: 100%;
 }

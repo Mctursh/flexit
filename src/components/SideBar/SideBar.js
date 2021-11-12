@@ -59,7 +59,7 @@ const SideBar = () => {
                     {items.map(({name, icon}, idx) => {
                         if (idx === 2) {
                             return (<li>                    
-                                <div className="sidebar-item-parent">
+                                <div key={2} className="sidebar-item-parent">
                                     <h4>SHARE</h4>
                                 </div>
                             </li>   ) 

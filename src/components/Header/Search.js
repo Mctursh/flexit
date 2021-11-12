@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Search = () => {
+
+
+const Search = ({ handleChange }) => {    
+    const [query, setQuery] = useState('')
+
+    const handle = (e) => {
+        setQuery(e.target.value)
+        handleChange(e.target.value)
+    }
+
     return (
         <div className="search-parent">
             <i className="fas fa-search"></i>
-            <input type="text" placeholder="Find Somethings" />
+            <input type="text" onChange={(e) => handle(e)} value={query} placeholder="Find Somethings" />
             <button>
                 <p>
                     Search

@@ -3,6 +3,7 @@ aside{
     padding: 3em 1em 3em 4em;
     border-right: solid 2px #f2f2f4;
     height: 100vh;
+    position: fixed;
 }
 
 aside header{
