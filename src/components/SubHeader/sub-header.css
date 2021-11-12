@@ -1,0 +1,19 @@
+.categ-parent{
+    display: flex;
+    border-radius: 10px;
+    background-color: #fff;
+    width: fit-content;
+    box-shadow: 0px 0px 6px #93919e;
+}
+.categ{
+    display: flex;
+    padding: 0.8em;
+    align-items: center;
+    gap: 1em;
+    grid-gap: 1em
+
+}
+
+.separator{
+    border-right: solid 2px #f2f2f4;
+}

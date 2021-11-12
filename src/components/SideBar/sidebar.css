@@ -4,6 +4,10 @@ aside{
     border-right: solid 2px #f2f2f4;
     height: 100vh;
 }
+
+aside header{
+    margin-bottom: 3em;
+}
 ul{
     padding: 0;
     list-style: none;
@@ -41,6 +45,7 @@ ul{
 .active{
     border: solid 2px #f2f2f4;
     border-radius: 5px;
+    box-shadow: 0px 0px 2px #93919e;
 }
 
 .active i{
